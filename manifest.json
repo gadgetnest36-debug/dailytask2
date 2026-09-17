@@ -1,0 +1,16 @@
+{
+  "name": "DailyTask",
+  "short_name": "DailyTask",
+  "description": "Simple daily task management app",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0f121c",
+  "theme_color": "#0f121c",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
