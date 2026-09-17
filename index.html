@@ -7,6 +7,8 @@
 <meta name="description" content="DailyTask is a clean, modern daily task manager that runs entirely in your browser." />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✅</text></svg>" />
 <link rel="stylesheet" href="style.css" />
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f121c">
 </head>
 <body>
 
@@ -234,5 +236,12 @@
 <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 
 <script src="script.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js");
+  });
+}
+</script>
 </body>
 </html>
